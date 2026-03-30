@@ -1,0 +1,4 @@
+requests[socks]>=2.31.0
+beautifulsoup4>=4.12.0
+colorama>=0.4.6
+PySocks>=1.7.1
