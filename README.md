@@ -1,4 +1,4 @@
-# 🔄 Proxy Rotator v2.0
+# Proxy Rotator v2.0
 
 A terminal-based **Proxy Rotator** tool written in Python with SQLite persistence, geo-filtering, and multi-protocol (HTTP/HTTPS/SOCKS4/SOCKS5) support.
 
@@ -9,7 +9,7 @@ A terminal-based **Proxy Rotator** tool written in Python with SQLite persistenc
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---|---|
@@ -20,19 +20,19 @@ A terminal-based **Proxy Rotator** tool written in Python with SQLite persistenc
 | **Protocol Filter** | Choose HTTP, HTTPS, SOCKS4, or SOCKS5 with `-p` |
 | **Concurrent Validation** | Tests proxies in parallel using `ThreadPoolExecutor` (40 threads) |
 | **IP Masking Check** | Verifies the proxy actually hides your real IP |
-| **Coloured Output** | Beautiful terminal output with colour-coded statuses |
-| **Professional CLI** | Full `argparse` interface with examples |
+| **Coloured Output** | Colour-coded terminal output |
+| **CLI** | `argparse` interface with examples |
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.8+
 - pip
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/proxy_rotater.git
+git clone https://github.com/furkan-akkaya/proxy_rotater.git
 cd proxy_rotater
 
 # Create a virtual environment (recommended)
@@ -44,7 +44,7 @@ source venv/bin/activate   # Linux/macOS
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
+## Usage
 
 ```bash
 # Basic — 3 requests through random proxies
@@ -79,7 +79,7 @@ python rotator_v2.py -u https://example.com -c 5 -t 5 --threads 60
 | `--force-scrape` | | Force fresh scrape, ignore DB cache | `false` |
 | `--min-pool` | | Min active proxies before auto-scrape | `20` |
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 rotator_v2.py
@@ -108,7 +108,7 @@ CREATE TABLE proxies (
 );
 ```
 
-## 📸 Example Output
+## Example Output
 
 ```
   [  DB]  Database ready → proxies.db
@@ -149,10 +149,10 @@ CREATE TABLE proxies (
   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This tool is intended for **educational purposes** and **authorized security testing** only. Always ensure you have explicit permission before scanning or sending automated requests to any target. The author assumes no liability for misuse.
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
